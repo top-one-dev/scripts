@@ -1,5 +1,5 @@
-def iterate_colors(colors)
-  # Your code here
+def skip_animals(animals, skip)
     result = []
-    colors.each{ |c| result.push c }
+    animals.each_with_index{ |e, i| result.push "#{i}:#{e}" if i >= skip }
+    result
 end
